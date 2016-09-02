@@ -11,6 +11,14 @@ type Config struct {
 	Prefix string
 }
 
+func New(host string, port int, prefix string) Config {
+	return Config{
+		Host:   host,
+		Port:   port,
+		Prefix: prefix,
+	}
+}
+
 func (m Config) SendMetric(metrics map[string]string) error {
 	graphite, err := graphite.NewGraphite(m.Host, m.Port)
 	if err != nil {

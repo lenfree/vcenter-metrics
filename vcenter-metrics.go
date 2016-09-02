@@ -50,11 +50,12 @@ func init() {
 		vcenterPass,
 		vcenterInsecure)
 
-	graphite = metrics.Config{
-		Host:   metricHost,
-		Port:   metricPort,
-		Prefix: "vcenter",
-	}
+	graphite = metrics.New(
+		metricHost,
+		metricPort,
+		"vcenter",
+	)
+
 	logger = pauly.New(
 		environment,
 		"vcenter-metrics",
