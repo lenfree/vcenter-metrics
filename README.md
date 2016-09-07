@@ -31,7 +31,7 @@ $ go build ./...
 
 ## Contributing
 
-1. Fork it ( https://git02.ae.sda.corp.telstra.com/projects/TOP/repos/vcenter-metrics?fork )
+1. Fork it ( https://github.com/lenfree/vcenter-metrics?fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
