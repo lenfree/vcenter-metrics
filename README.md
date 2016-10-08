@@ -1,9 +1,13 @@
 vcenter-metrics
 =================
 
+[![Build Status](https://travis-ci.org/lenfree/vcenter-metrics.svg?branch=master)](https://travis-ci.org/lenfree/vcenter-metrics.svg?branch=master)
+
 A bot that gather vcenter cluster and VMs summary and ships to Graphite and logging
 backend such as Logstash. This is so we could measure, monitor, alert and build 
 an event driven platform and decided to share with everyone
+
+[Binary Releases](https://github.com/lenfree/vcenter-metrics/releases)
 
 NOTE:
 
@@ -16,7 +20,7 @@ Copy .env.example to .env
 $ cp .env.example .env
 
 Uncompiled:
-$ dotenv make
+$ dotenv make run
 
 Compiled:
 $ dotenv ./vcenter-metrics
@@ -27,7 +31,7 @@ $ dotenv ./vcenter-metrics
 
 ## Build
 
-$ go build ./...
+$ make release
 
 ## Contributing
 

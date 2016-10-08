@@ -26,6 +26,10 @@ install:
 build: image
 	docker build -t $(DOCKER_IMAGE_NAME) .
 
+.PHONY: run
+run:
+	dotenv go run vcenter-metrics.go
+
 .PHONY: image
 image:
 ifndef DOCKER_IMAGE_NAME
