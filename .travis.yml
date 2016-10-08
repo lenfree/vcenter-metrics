@@ -1,0 +1,15 @@
+language: go
+go:
+- 1.7
+deploy:
+  provider: releases
+  api_key:
+    secure: rd0mUszAhbesKV8wOLle9+hfMp5J/rQcAsbhsDwk9a9lAhejEsTqT+qo5GUaehqsSERwRAHd/c66Ek3qlA00GNFfLamIXTFadVm1nR7wXHk7jPjrMiekOGIJAAjcaSYp8ic9wP0mSyZthjc+Tm2685oacXese07X5o0t3BsnAmjPmKnIlu4ivBCQ/RiN0i68Qicyewjhar9ElId3/GnADx4dgsVdgGs7u3Yjm4qfutajsLBaxiwE4NabPu3PQIiXGb6G/zeyOe+A3idWogOJ3gc1EBbRHxbTn76OYjUUYwGleo4q42dD7shiq2qkCYXiM7Z6y3j8IuaigyvAS3A19g3qQ2z3oFA2M97WLYVNtITZ6wKw8yx+bZDO/v4PPt3r5HYBVNq+iTWkvdauxgQRmUzzPA0a18fTWthdc18D+uyIT29jQNKGX9ASp/CNzhHnq9jtRSULjAxBW9WoT+ah8T/eoz6Kr2y26iKoaxVHlfwCLyO53nu5XKMEqp8AqeG/alhFfCVayWb8fzbo0Hru/ppTrfxRCJCvptZ8PmWNiio9q5GGJlDX/3LS4ky76ptuY0weGR7dLSjRDofiIffTAjPyAPVPfCYn3t0v4GOKmvlyeLzWh0pjUJBtImqsXgdtP24iwxSLIFIHsJyrGDAFu1RmaSynQ44QmSIEXfJo7U0=
+  file:
+    - release/vcenter-metrics-linux-amd64
+    - release/vcenter-metrics-linux-386
+    - release/vcenter-metrics-darwin-amd64
+  skip_cleanup: true
+  on:
+    repo: lenfree/vcenter-metrics
+    tags: true

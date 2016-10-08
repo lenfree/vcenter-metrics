@@ -14,4 +14,4 @@ WORKDIR /go/src/github.com/lenfree/vcenter-metrics
 RUN mkdir -p /go/src/github.com/lenfree/vcenter-metrics
 COPY . /go/src/github.com/lenfree/vcenter-metrics/
 
-CMD ["make"]
+CMD ["make start"]
